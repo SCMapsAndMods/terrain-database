@@ -1,0 +1,32 @@
+// Terrain Item
+
+.terrain-item {
+  @extend .panel;
+  @extend .panel-default;
+  @extend .col-md-3;
+  @extend .col-sm-6;
+}
+
+.terrain-item__body {
+  @extend .panel-body;
+}
+
+.terrain-item__tileset {
+  font-size: 1.4em;
+}
+
+.terrain-item__image {
+  @extend .img-responsive;
+}
+
+
+// Special Tileset Badges
+span[class^="terrain-item__tileset--"] {
+  @extend .label;
+}
+
+.terrain-item__tileset--Jungle {
+  @extend .label-success;
+}
+
+// \Special Tileset Badges

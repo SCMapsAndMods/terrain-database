@@ -1,0 +1,4 @@
+# Ignore raw-tilesets
+
+src/private/raw-tilesets
+npm-debug.log

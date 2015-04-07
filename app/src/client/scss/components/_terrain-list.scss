@@ -1,0 +1,9 @@
+// Terrain List
+
+.terrain-list {
+  @extend .container;
+}
+
+.terrain-list__section {
+  @extend .row;
+}

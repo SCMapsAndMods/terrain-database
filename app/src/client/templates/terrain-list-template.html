@@ -1,0 +1,38 @@
+<template name="terrainList">
+  <div class="terrain-list">
+    <h1>Welcome to the Starcraft Terrain Database!</h1>
+    <div class="terrain-list__section">
+      {{#each terrainList}}
+        {{> terrainItem this}}
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name="terrainItem">
+  <div class="terrain-item">
+    <div class="terrain-item__body">
+      <h1 class="terrain-item__title">
+        {{title}}
+      </h1>
+      <div class="terrain-item__preview">
+        <img class="terrain-item__image" src="{{image_src}}" />
+      </div>
+      <p class="terrain-item__tileset">
+        <span class="terrain-item__tileset--{{tileset}}">{{tileset}}</span>
+      </p>
+      <p class="terrain-item__keywords">
+        {{#each keywords}}
+          {{> terrainKeyword}}
+        {{/each}}
+      </p>
+    </div>
+  </div>
+</template>
+
+
+<template name="terrainKeyword">
+  <span class="terrain-kewyord">
+    {{this}}
+  </span>
+</template>
